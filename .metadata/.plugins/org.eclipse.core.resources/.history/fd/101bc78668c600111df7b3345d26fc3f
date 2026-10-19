@@ -1,0 +1,43 @@
+package Lab_01;
+
+import java.util.Scanner;
+
+public class Exercise6 {
+	
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		double math, english, physics, program;
+		double max = 0;
+		double min = 0;
+		String maxSub, minSub;
+		
+		System.out.print("Input your scores of 4 subjects (Math, English, Physics, and Programming): ");
+		
+		math = sc.nextDouble();
+		max = min = math;
+		maxSub = "Math";
+		minSub = "Math";
+		
+		english = sc.nextDouble();
+		
+		if (english > max) {max = english; maxSub = "English";}
+		if (english < min) {min = english; minSub = "English";}
+		
+		physics = sc.nextDouble();
+		
+		if (physics > max) {max = physics; maxSub = "Physics";}
+		if (physics < min) {min = physics; minSub = "Physics";}
+		
+		program = sc.nextDouble();
+		
+		if (program > max) {max = program; maxSub = "Programming";}
+		if (program < min) {min = program; minSub = "Programming";99}
+			
+		System.out.println("Max score is: " + max + " (" + maxSub + " course)");
+		
+		System.out.println("Min score is" + min + " (" + minSub + " course)");
+		
+	}
+	
+	}

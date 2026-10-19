@@ -1,0 +1,51 @@
+package Lab_01;
+
+import java.util.Scanner;
+
+public class Exercise_2 {
+	public static void main(String[] args) {
+		
+		System.out.println("============================================");
+		System.out.println("           Welcome to our program");
+		System.out.println("'Quadratic Equation Solver ax² + bx + c = 0'");
+		System.out.println("============================================");
+		System.out.println();
+		
+		Scanner sc = new Scanner(System.in);
+		int a, b, c;
+		
+		System.out.print("Input a: ");
+		a = sc.nextInt();
+		
+		System.out.print("Input b: ");
+		b = sc.nextInt();
+		
+		System.out.print("Input c: ");
+		c = sc.nextInt();
+		
+		System.out.println();
+		
+		System.out.println("Roots of this equation: " + a + "x² + " + b + "x + " + c + " = 0 are:" );
+		
+		double delta;
+		delta = b*b - 4*a*c;
+		
+		double x1, x2, x;
+		
+		if (delta>0) {
+			x1 = (-b + Math.sqrt(delta)) / 2*a;
+			x2 = (-b - Math.sqrt(delta)) / 2*a;
+			System.out.println("x1 = " + x1 + "\nx2 = " + x2);
+		}
+		else if (delta == 0) {
+			x = -b/(2*a);
+			System.out.println("x = " + x);
+		}
+		else {
+			System.out.println("There are no real roots.");
+		}
+		
+	}
+
+}
+

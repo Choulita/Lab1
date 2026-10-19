@@ -1,0 +1,31 @@
+package test;
+
+import java.util.Scanner;
+
+public class Task2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int number;
+		int sum = 0;
+		double avg;
+		
+		System.out.println("Enter a number: ");
+		number = sc.nextInt();
+		
+		for(int k=1000; k>=number; k--) {
+			System.out.println(k);
+		}
+		
+		for(int k=1000; k>=number; k--) {
+			sum += k;
+		}
+		
+		System.out.println("The sum is: " + sum);"
+		
+		avg = sum/(1000 - k + 1);
+		
+		System.out.println("The average is: " = avg);
+		
+	}
+
+}

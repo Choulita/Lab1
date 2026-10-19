@@ -1,0 +1,21 @@
+package Lab_01;
+
+import java.util.Scanner;
+
+public class Exercise6 {
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int num;
+		
+		System.out.print("Please input a postitve number:");
+		
+		num = input.nextInt();
+		
+		for(int i=2, i)
+		
+	}
+
+}

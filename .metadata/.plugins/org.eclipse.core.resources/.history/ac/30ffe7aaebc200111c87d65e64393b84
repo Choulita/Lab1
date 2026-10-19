@@ -1,0 +1,39 @@
+package test;
+
+import java.util.Scanner;
+
+public class Task3 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a, b, c;
+		
+		System.out.println("Enter a: ");
+		a = sc.nextInt();
+		
+		System.out.println("Enter b: ");
+		b = sc.nextInt();
+		
+		System.out.println("Enter c: ");
+		c = sc.nextInt();
+		
+		double delta;
+		delta = b*b - 4*a*c;
+		
+		double x1, x2, x;
+		
+		if (delta>0) {
+			x1 = (-b + Math.sqrt(delta)) / 2*a);
+			x2 = (-b - Math.sqrt(delta)) / 2*a);
+			System.out.println("There are two roots: " + x1 + "and" + x2);
+		}
+		else if (delta == 0) {
+			x = (-b/2*a);
+			System.out.println("There is one root: " + x);
+		}
+		else {
+			System.out.println("There are no real roots.");
+		}
+		
+	}
+
+}

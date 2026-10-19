@@ -1,0 +1,20 @@
+package Lab_01;
+
+import java.util.Scanner;
+
+public class Exercise3 {
+	public static void(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		double a,b,c,d,e;
+		
+		System.out.println("Input 5 numbers: ");
+		
+		a = input.nextDouble();
+		b = input.nextDouble();
+		c = input.nextDouble();
+		d = input.nextDouble();
+		e = input.nextDouble();
+		
+	}
+}

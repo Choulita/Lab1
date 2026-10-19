@@ -1,0 +1,26 @@
+package Lab_01;
+
+import java.util.Scanner;
+
+public class Exercise5 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double math, english, physics, program;
+		
+		System.out.print("Input your scores of 4 subjects (Math, English, Physics, and Programming): ");
+		math = sc.nextDouble();
+		english = sc.nextDouble();
+		physics = sc.nextDouble();
+		program = sc.nextDouble();
+		
+		
+		
+		System.out.print("Max score is");
+		
+		System.out.print("Min score is");
+		
+	}
+
+}
